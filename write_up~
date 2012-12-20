@@ -2,6 +2,16 @@
 We found the addresses by matching first the five-digit zipcode, after which we were able to have a closer look at the addresses, and filtered it further by City, State, ZipCode
 
 2. To-Do List Script
+The to-do list script starts off by checking to see if a list has already been
+created; if not, it creates a new directory q in ~/.config and a new file
+to-do_list_file within q.  The script is run via bash, and is executable by all.
+The add function checks for the number of arguments (if 2, the second is used as
+the date) and then ensures that the date is saved via the -I option so that the
+list can be sorted by date.  Pop removes a line from the to-do list through
+if-statement testing (if a numeric argument is provided that line number is
+removed, else the first line is removed.)  List simply runs cat on the file, as
+sorting was handled in the add function.  Some echoes have been added to let the
+user know what their command has accomplished.
 
 3. Dead Disk Recovery
 Like in database detective, we used grep to find the report using the field names. Once we found the field names, we played around with the -B and -A options to see the lines before and after the line with field names. We immediately saw the financial report only had 4 lines of input. 
