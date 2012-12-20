@@ -1,0 +1,7 @@
+grep -E -a --color '(,\w+){3}' corrupted-image
+
+Item,Purchase Code,Employee,Amount,Reconciled?
+TA,ABC123,kainino,12,Y
+TA,1A2B3C,ericob,15.3,Y
+Course,LINUX,panzers,191,Y
+Course (old),CISUX,panzers,399,N

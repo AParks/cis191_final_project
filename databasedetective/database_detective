@@ -1,0 +1,10 @@
+Harvard Education Press.  8 Story Street First Floor  Cambridge  MA 02138
+
+Department of Pharmacy Practice, College of Pharmacy, University of Nebraska Medical Center, Omaha, NE 68198-6045, United States
+A Division of Simon & Schuster  Inc.  160 Gould Street  Needham Heights  MA 02194
+Taylor and Francis Group  7625 Empire Dr.  Florence  KY 41042
+ProQuest LLC. 789 East Eisenhower Parkway  P.O. Box 1346  Ann Arbor  MI 48106
+Research Laboratories, 10 Sentry Parkway, BL1-3, Blue Bell, PA 19422
+
+
+grep -E -a --color '\<[A-Z][a-z]*(,?)[[:space:]]+[A-Z]{2}[[:space:]][0-9]{5}\>' data.csv

@@ -1,0 +1,11 @@
+1. Database Detective 
+We found the addresses by matching first the five-digit zipcode, after which we were able to have a closer look at the addresses, and filtered it further by City, State, ZipCode
+
+2. To-Do List Script
+<to-do>
+
+3. Dead Disk Recovery
+Like in database detective, we used grep to find the report using the field names. Once we found the field names, we played around with the -B and -A options to see the lines before and after the line with field names. We immediately saw the financial report only had 4 lines of input. 
+
+4. Preparing a Webserver - This was pretty straightforward, except for a few things: 1.) figuring out that we needed to add a rule to the security group that would allow the website to communicate through port 80. 2.) realizing we need to use the command adduser (which is more powerful than useradd) in order to add users to the server. We created an account with the username "cis191" and password "cis191rocks." After adding the cis191 public key to the .ssh folder in the cis191 account, and making sure the ownership (cis191) and public key permissions (600) were properly set, you guys should be able to ssh into our server at the following dns: cis191@ec2-107-22-87-116.compute-1.amazonaws.com
+ 
